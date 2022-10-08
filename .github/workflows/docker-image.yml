@@ -56,5 +56,5 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
           repository: ddsderek/ariang
-          short-description: AriaNg Docker
+          short-description: A small AriaNg Docker image
           readme-filepath: ./README.md
