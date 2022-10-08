@@ -12,7 +12,7 @@ docker run -d \
     --log-opt max-size=1m \
     --restart unless-stopped \
     -p 6880:6880 \
-    p3terx/ariang
+    ddsderek/ariang
 ```
 **docker-compose**
 ```
@@ -26,5 +26,5 @@ services:
         restart: unless-stopped
         ports:
             - '6880:6880'
-        image: p3terx/ariang
+        image: ddsderek/ariang
 ```
