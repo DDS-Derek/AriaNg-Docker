@@ -31,12 +31,11 @@ RUN mkdir -p \
         /tmp/ariang.zip 
 
 
-FROM ddsderek/ariang:base
+FROM scratch
 
+COPY --from=build /src/darkhttpd-static /darkhttpd
 COPY --from=build /tmp/ariang /AriaNg
 
-ENTRYPOINT ["/darkhttpd" "/AriaNg"]
-
-CMD ["--port" "6880"]
+ENTRYPOINT ["/darkhttpd" "/AriaNg" "--port" "6880"]
 
 EXPOSE 6880
