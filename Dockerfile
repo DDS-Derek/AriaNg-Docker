@@ -34,10 +34,7 @@ RUN mkdir -p \
 FROM scratch
 
 COPY --from=build /src/darkhttpd-static /darkhttpd
-COPY --from=build /tmp/ariang /AriaNg
 
-ENTRYPOINT ["/darkhttpd" "/AriaNg"]
+ENTRYPOINT ["/darkhttpd"]
 
-CMD ["--port" "6880"]
-
-EXPOSE 6880
+CMD ["."]
