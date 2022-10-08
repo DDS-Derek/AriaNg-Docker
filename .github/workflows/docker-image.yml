@@ -47,7 +47,7 @@ jobs:
             VERSION=${{ steps.set-version.outputs.version }}
           tags: |
              ${{ secrets.DOCKER_USERNAME }}/ariang:${{ steps.set-version.outputs.version }}
-             ${{ secrets.DOCKER_USERNAME }}/ariang:latest
+             ${{ secrets.DOCKER_USERNAME }}/ariang:base
              
       -
         name: Docker Hub Description
