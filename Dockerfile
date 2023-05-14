@@ -1,7 +1,7 @@
 FROM alpine AS build
 
 ENV DARKHTTPD_TAG=v1.14
-ENV ARIANG_TAG=1.3.4
+ENV ARIANG_TAG=1.3.6
 
 # Build darkhttpd
 RUN apk add --no-cache build-base
